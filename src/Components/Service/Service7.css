@@ -1,0 +1,86 @@
+.testimonials-container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    padding: 40px 20px; /* Increased padding */
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials-title1 {
+    text-align: center;
+    font-size: 2.5rem; /* Increased font size */
+    margin-bottom: 30px; /* Increased margin */
+    color: #007bff;
+  }
+  .testimonials-heading1 {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    font-size: 3rem; /* Increased font size */
+    margin-bottom: 30px; /* Increased margin */
+    color: black;
+    position: relative; /* Position relative to allow absolute positioning of the ::after element */
+  }
+  
+  .testimonials-heading1::after {
+    content: ""; /* Required for pseudo-elements */
+    display: block; /* Makes it a block-level element */
+    width: 50px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #007bff; /* Link color */
+    ; /* Color of the underline */
+    position: absolute; /* Position it relative to the heading */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Offset by half its width to truly center it */
+    bottom: -10px; /* Position it slightly below the text */
+  }
+  
+  
+  .testimonials-list1 {
+    display: grid; /* Changed to grid for card layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+  }
+  
+  
+  
+  .testimonial-card1 {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light blue gradient */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.testimonial-card1:hover {
+    transform: translateY(-5px); /* Slightly raise the card on hover */
+}
+
+  
+  .testimonial-image1 {
+    width: 70px; /* Set width for the image */
+    height: 70px; /* Set height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 15px; /* Space between image and text */
+  }
+  
+  .testimonial-content1{
+    flex: 1; /* Allow content to grow */
+  }
+  
+  .testimonial-feedback1 {
+    font-size: 1.2rem; /* Feedback font size */
+    color: #555; /* Dark gray for feedback text */
+    margin-bottom: 10px; /* Margin below feedback */
+  }
+  
+  .testimonial-name1 {
+    font-weight: bold;
+    color: #007bff; /* Link color */
+  }
+  
+  

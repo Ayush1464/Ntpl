@@ -1,0 +1,206 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    
+}
+  
+.logo {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    padding: 10px; /* Add some space around the logo */
+    background-color: transparent; /* Make sure background is transparent */
+}
+
+.logo img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30%; /* Make it circular, if the image allows */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+  
+.menu {
+    display: flex;
+    flex-direction: column; /* Column by default, will change for larger screens */
+    align-items: center;
+    align-items: end;
+    
+}
+  
+.items {
+    margin-top: 3%;
+    
+    display: flex; /* Display flex for menu items */
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Size of hamburger icon */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Hamburger menu lines */
+.line {
+    width: 25px; /* Width of the hamburger lines */
+    height: 3px; /* Height of the hamburger lines */
+    background-color: #003399; /* Color of the hamburger lines */
+    margin: 5px 0; /* Space between lines */
+    transition: all 0.3s ease; /* Smooth transition for the opening animation */
+}
+
+/* Change hamburger lines to an X shape when menu is open */
+.line.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Rotate first line */
+}
+
+.line.open:nth-child(2) {
+    opacity: 0; /* Hide second line */
+}
+
+.line.open:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px); /* Rotate third line */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+      padding: 15px; /* Reduce padding for smaller screens */
+      gap: 100px; /* Adjust gap for medium screens */
+    }
+  
+    .menu {
+      flex-direction: row; /* Row layout for medium screens */
+    }
+  
+    .items {
+      font-size: 40px; /* Slightly smaller font size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack navbar items vertically */
+      align-items: flex-start; /* Align items to the start */
+      gap: 20px; /* Reduce gap for stacked layout */
+    }
+  
+    .menu {
+      width: 100%; /* Ensure menu takes full width */
+      justify-content: space-between; /* Spread items */
+      align-items: center; /* Center align */
+    }
+  
+    .items {
+      font-size: 30px; /* Reduce font size for smaller screens */
+      display: none; /* Hide menu items by default */
+    }
+
+    .items.open {
+      display: flex; /* Show menu items when open */
+      flex-direction: column; /* Stack menu items */
+    }
+
+    .hamburger {
+      display: block; /* Show hamburger icon */
+    }
+}
+  
+@media (max-width: 480px) {
+    .logo {
+      font-size: 20px; /* Further reduce logo size */
+    }
+  
+    .items {
+      font-size: 12px; /* Smaller font size for very small screens */
+    }
+  
+    .social_icons .icon {
+      font-size: 18px; /* Smaller social icon size */
+    }
+}
+
+.social_icons {
+    display: flex;
+    margin-right: 20px;
+}
+  
+.social_icons .icon {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+  
+.social_icons .facebook:hover {
+    color: #3b5998;
+}
+  
+.social_icons .twitter:hover {
+    color: #1da1f2;
+}
+  
+.social_icons .linkedin:hover {
+    color: #0077b5;
+}
+  
+.items a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #003399;
+    transition: color 0.3s ease;
+}
+  
+.items a::after {
+    content: '|'; /* Adding the pipe symbol after each item */
+    margin-left: 10px;
+    color: #ccc; /* Color for the pipe symbol */
+}
+  
+.items a:last-child::after {
+    content: ''; /* Remove the pipe after the last menu item */
+}
+  
+.items a:hover {
+    color: #ff6600;
+}
+/* Add underline under the active item */
+.items a.active {
+    position: relative; /* Make it relative for the underline */
+}
+
+.items a.active::after {
+    content: ''; /* No content, just the underline */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; 
+    height: 2px; /* Thickness of the underline */
+    background-color: blue; /* Color of the underline */
+    transform: scaleX(1); /* Fully visible underline */
+    transform-origin: bottom left; /* Start from left */
+    transition: transform 0.3s ease-in-out; 
+}
+
+.items a:hover::after {
+    transform: scaleX(1); 
+}
+
+.items a::after {
+    transform: scaleX(0); 
+}
+
+

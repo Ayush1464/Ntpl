@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_hero {
+    width: 100%;
+    height: 35vh; /* You can adjust this value if needed */
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    text-align: center;
+    /* background-color: black; */
+    color: white;
+}
+
+.home_hero h1 {
+    
+    font-size: 1.5rem; /* Reduced font size */
+}
+
+.home_hero span {
+    color: orangered;
+}
+
+.hero_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.hero_img img {
+    width: 100%;
+}
+
+.hero_text {
+    width: 30%;
+    position: absolute;
+    top: 5%; /* Adjust if necessary */
+    color: white;
+    text-align: center;
+}
+
+.hero_text button {
+    width: 40%;
+    height: 6vh; /* Increased height for better visibility */
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white; /* Ensure the text color is visible */
+    font-size: 1rem; /* Increased font size for better visibility */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium screens */
+@media (max-width: 1024px) {
+    .home_hero {
+        height: auto; /* Allow for flexibility on medium screens */
+        padding: 20px 0; /* Add padding for better spacing */
+    }
+
+    .home_hero h1 {
+        width: 60%;
+        font-size: 1.3rem; /* Reduced font size for medium screens */
+    }
+
+    .hero_text {
+        width: 40%; /* Adjust width for medium screens */
+    }
+
+    .hero_text button {
+        width: 50%; /* Increase button width for medium screens */
+        height: 7vh; /* Increased height for better visibility */
+        font-size: 1rem; /* Button text size */
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .home_hero {
+        height: auto; /* Allow flexibility on smaller screens */
+        padding: 20px 0; /* Add padding for better spacing */
+    }
+
+    .home_hero h1 {
+        font-size: 1.2rem; /* Further reduced font size for readability */
+        width: 100%; /* Allow full width for text */
+    }
+
+    .hero_text {
+        width: 80%; /* Adjust width for smaller screens */
+        top: 15%; /* Move down for better spacing */
+    }
+
+    .hero_text button {
+        width: 70%; /* Increase button width for smaller screens */
+        height: 8vh; /* Increased height for better visibility */
+        font-size: 1rem; /* Button text size */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .home_hero {
+        height: auto; /* Flexible height for very small screens */
+        padding: 10px 0; /* Adjust padding */
+    }
+
+    .home_hero h1 {
+        font-size: 1rem; /* Further reduced font size for very small screens */
+        width: 100%; /* Full width for text */
+    }
+
+    .hero_text {
+        width: 90%; /* Full width for text */
+    
+        top:10%; /* Move down for better spacing */
+    }
+
+    .hero_text button {
+        width: 50%; /* Increase button width for very small screens */
+        height: 5vh; /* Increased height for better visibility */
+        font-size: 1.2rem; /* Increased button text size for better readability */
+    }
+}
+.Hero {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space out children */
+    position: relative; /* Allows positioning of children */
+}
+
+.hero_img {
+    position: relative; /* Position context for child elements */
+    flex: 1; /* Allows the image to take up available space */
+}
+
+.hero_img img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero_text {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Center text vertically */
+    right: 20px; /* Adjust distance from the right */
+    transform: translateY(-50%); /* Adjust for centering */
+    color: white; /* Change text color for visibility */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+
+
+button {
+    margin-top: 20px; /* Add some space above the button */
+    padding: 10px 20px; /* Button padding */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+

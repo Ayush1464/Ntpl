@@ -1,0 +1,60 @@
+.apidots-container {
+  background-color: #005245;
+  color: #e1e1e1; /* Lighter text color for better contrast */
+  padding: 30px; /* Increased padding for a more spacious layout */
+  font-family: 'Helvetica Neue', sans-serif; /* Changed font family for a modern look */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+/* 
+.apidots-container:hover {
+  background-color: #2a2e32; 
+} */
+
+.apidots-intro h2, .apidots-features h2 {
+  color: #66bb6a; /* Green color for headings */
+  transition: color 0.3s ease; /* Smooth color transition */
+  margin-bottom: 15px; /* Space below headings */
+  font-size: 1.5em; /* Larger font size for headings */
+}
+
+.apidots-intro h2:hover, .apidots-features h2:hover {
+  color: #4caf50; /* Darker green on hover */
+}
+
+.apidots-features ul {
+  list-style: disc; /* Use disc style for the list */
+  padding-left: 20px; /* Padding for list items */
+}
+
+.apidots-features li {
+  margin: 10px 0;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+  position: relative; /* For pseudo-element positioning */
+  padding-left: 20px; /* Padding for list items */
+}
+
+.apidots-features li::before {
+  content: '✔'; /* Adding a checkmark before each item */
+  color: #66bb6a; /* Checkmark color */
+  position: absolute; /* Positioning the checkmark */
+  left: 0; /* Align left */
+}
+
+.apidots-features li:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+.apidots-footer a {
+  color: #66bb6a; /* Green color for links */
+  text-decoration: none;
+  font-weight: bold; /* Bold links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.apidots-footer a:hover {
+  color: #4caf50; /* Darker green on hover */
+  text-decoration: underline; /* Underline on hover */
+}

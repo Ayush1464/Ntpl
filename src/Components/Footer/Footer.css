@@ -1,0 +1,98 @@
+.footer {
+    background-color: #003399; /* Dark blue background */
+    padding: 40px;
+    color: #fff; /* Default text color */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly; /* Equal spacing between the sections */
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand,
+  .footer-contact,
+  .footer-links {
+    flex: 1; /* Equal flex values to give equal space */
+    text-align: center; /* Center content in each section */
+    margin: 0 20px; /* Optional: Add some margin between sections */
+  }
+  
+  .footer-contact {
+    text-align: left;
+  }
+  
+  .footer-brand h2 {
+    font-size: 28px; /* Increased font size for emphasis */
+    font-weight: bold; /* Make the brand name bold */
+    color: #ffcc00; /* Gold color for brand name */
+    margin-bottom: 10px; /* Space below the brand name */
+  }
+  
+  .footer-contact h3,
+  .footer-links h3 {
+    font-size: 20px; /* Increase font size for headings */
+    margin-bottom: 10px;
+    text-decoration: none; /* Underline the headings for emphasis */
+    color: #66ffcc; /* Light teal color for headings */
+    text-transform: uppercase;
+  }
+  
+  .footer-contact p,
+  .footer-links {
+    font-size: 20px; /* Set a clear and readable font size */
+    line-height: 1.5; /* Improve line height for readability */
+    color: #ffffff; /* White color for the text */
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  
+  .footer-links ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+  }
+  
+  .footer-links li {
+    margin: 5px 0; /* Space between links */
+    color: white;
+  }
+  
+  .footer-links a {
+    color: inherit;
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+ 
+  
+  .footer-line {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc; /* Subtle line for separation */
+  }
+  .underline{
+    border-top: 4px solid gray;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px; /* Set a smaller size for copyright */
+    color: #ffcc00; /* Gold color for copyright text */
+    margin-top: 10px; /* Space above copyright text */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .footer-brand, .footer-contact, .footer-links {
+      text-align: left; /* Align text to the left */
+      margin: 10px 0; /* Space between sections */
+      width: 100%; /* Ensure full width for each section */
+    }
+  }
+
+  
+ 
+  

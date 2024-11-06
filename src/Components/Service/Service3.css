@@ -1,0 +1,133 @@
+.service3-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .service3-text-container {
+    width: 800px;
+    margin-top: 10%;
+   
+    padding: 20px;
+    
+  }
+  
+  .service3-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service3-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+ .ypewriter_text{
+  color: #007bff;
+ }
+  
+  .service3-description {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .service3-form-container {
+    width: 400px;
+    background-color: #f0f0f0; /* Gray background for the form */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .service3-form-title {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  
+  .service3-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .service3-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .service3-input,
+  .service3-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .service3-submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Button takes full width */
+  }
+  
+  .service3-submit-btn:hover {
+    background-color: #0056b3;
+  }
+  /* Media query for tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .service3-container {
+      flex-direction: column; /* Stack the text and form vertically */
+      padding: 20px;
+  }
+
+  .service3-text-container {
+      width: 100%; /* Full width for text container */
+      margin-top: 0; /* Remove top margin on smaller screens */
+  }
+
+  .service3-form-container {
+      width: 100%; /* Form takes full width on smaller screens */
+      margin-top: 20px; /* Add margin between text and form */
+  }
+
+  .service3-title,
+  .service3-heading {
+      font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .service3-text-container,
+  .service3-form-container {
+      padding: 15px; /* Reduce padding for mobile */
+  }
+
+  .service3-title {
+      font-size: 1.2rem; /* Further reduce font size for mobile */
+  }
+
+  .service3-heading {
+      font-size: 1.5rem; /* Adjust heading size for mobile */
+  }
+
+  .service3-description {
+      font-size: 0.9rem; /* Smaller font for description */
+  }
+
+  .service3-submit-btn {
+      padding: 10px; /* Adjust button padding for smaller screens */
+      font-size: 0.9rem; /* Smaller button text */
+  }
+}
+
+
+  

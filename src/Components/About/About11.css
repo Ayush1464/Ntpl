@@ -1,0 +1,155 @@
+.aboutSection1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s;
+    max-width: 1200px; /* Limits the width of the entire section */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+.aboutSection1:hover {
+    background-color: #f0f0f0;
+    animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.childOne {
+    flex: 1;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+.childOne:hover {
+    animation: grow 0.3s forwards;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.childTwo {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers the image within childTwo */
+}
+
+.childTwo img {
+    max-width: 80%; /* Reduces the image size */
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.childTwo:hover img {
+    animation: brighten 0.3s forwards;
+}
+
+@keyframes brighten {
+    0% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1.1);
+    }
+}
+
+.childOne p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .aboutSection1 {
+        flex-direction: column;
+        align-items: center; /* Centers the content for smaller screens */
+    }
+
+    .childOne {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .childTwo img {
+        max-width: 90%; /* Further reduces image size on smaller screens */
+    }
+
+    .childOne p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .childOne p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .aboutSection1 {
+        padding: 10px;
+    }
+}
+/* About11.css */
+
+.aboutSection1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.childOne {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.childTwo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Style for h2 */
+.childOne h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b2b2b; /* Dark color for contrast */
+    margin-bottom: 15px;
+    border-left: 4px solid #4CAF50; /* Optional: Adds a green border to the left */
+    padding-left: 10px;
+    font-family: Arial, sans-serif; /* Optional: Sets a specific font */
+}
+
+/* Style for p */
+.childOne p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4f4f4f;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif; /* Optional: Sets a specific font */
+}
+
+/* Add hover effect for p */
+.childOne p:hover {
+    color: #333;
+    transform: scale(1.02); /* Slightly enlarges the text on hover */
+    transition: color 0.3s, transform 0.3s;
+}

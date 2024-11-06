@@ -1,0 +1,60 @@
+.home_part4 {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    margin-top: 5%;
+}
+
+.para4_text {
+    width: 40%;
+}
+
+.contact {
+    color: orangered;
+}
+
+.home_part4 img {
+    width: 45%;
+}
+
+.points {
+    display: flex;
+    gap: 20px;
+}
+
+.main_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .home_part4 {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .para4_text {
+        width: 100%; /* Full width for paragraph on mobile */
+        margin-bottom: 20px; /* Add some spacing */
+    }
+
+    .home_part4 img {
+        width: 100%; /* Full width for image on mobile */
+    }
+
+    .points {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+    .points {
+        gap: 2px; /* Further reduce gap on very small screens */
+    }
+}

@@ -1,0 +1,27 @@
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically if needed */
+    overflow: hidden; /* Prevents overflow during animation */
+}
+
+.about video {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;    /* Maintains aspect ratio */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
+}
+
+.about img:hover {
+    animation: zoomIn 0.3s forwards; /* Add zoom-in effect on hover */
+    filter: brightness(1.1); /* Brighten the image on hover */
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); /* Scale to 1.1 on hover */
+    }
+}

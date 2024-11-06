@@ -1,0 +1,24 @@
+.apidots-container {
+    background-color: #005245;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .apidots-intro h2, .apidots-features h2 {
+    color: #ff5050;
+  }
+  
+  .apidots-features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .apidots-features li {
+    margin: 10px 0;
+  }
+  
+  .apidots-footer a {
+    color: #ff5050;
+    text-decoration: none;
+  }
